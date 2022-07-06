@@ -13,6 +13,7 @@ int main(void)
 
 	j = 1;
 	k = 2;
+	k = next;
 	sum = 0;
 
 	for (i = 1; i <= 33; ++i)
@@ -23,7 +24,6 @@ int main(void)
 		}
 		sum = sum + j;
 		j = k;
-		k = next;
 	}
 	printf("%lu\n", sum);
 
