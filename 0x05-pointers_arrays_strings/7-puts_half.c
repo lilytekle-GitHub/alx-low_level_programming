@@ -18,3 +18,4 @@ void puts_half(char *str)
 	for (i = y; i < x; i++)
 		_putchar(str[i]);
 	_putchar('\n');
+}
