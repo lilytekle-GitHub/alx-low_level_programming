@@ -31,7 +31,7 @@ int check_palindrome(char *s)
 	if (*s == s[l])
 	{
 		s++;
-		i--;
+		l--;
 	}
 	else
 	{
