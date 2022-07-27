@@ -11,9 +11,11 @@ char **strtow(char *str)
  *
  * Return: The index marking the end of the initial word pointed to by str.
  */
+
 int word_len(char *str)
 {
-	int index = 0, len = 0;
+	int index = 0;
+        int len = 0;
 
 	while (*(str + index) && *(str + index) != ' ')
 	{
@@ -30,6 +32,7 @@ int word_len(char *str)
  *
  * Return: The number of words contained within str.
  */
+
 int count_words(char *str)
 {
 	int index = 0, words = 0, len = 0;
@@ -48,6 +51,7 @@ int count_words(char *str)
 
 	return (words);
 }
+
 /**
  * strtow - Splits a string into words.
  * @str: The string to be split.
@@ -55,6 +59,7 @@ int count_words(char *str)
  * Return: If str = NULL, str = "", or the function fails - NULL.
  *         Otherwise - a pointer to an array of strings (words).
  */
+
 char **strtow(char *str)
 {
 	char **strings;
